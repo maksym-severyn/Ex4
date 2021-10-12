@@ -1,6 +1,6 @@
 package com.isa.food.details;
 
-public enum PizzaSize {
+public enum SizeOfPizza {
     SMALL,
     MEDIUM,
     LARGE
