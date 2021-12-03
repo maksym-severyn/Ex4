@@ -1,30 +1,63 @@
-# Zadania domowe dla kursu JJDZR4
+# Zadanie 4 - OOP w Java
+#### Zakres: klasa, obiekt, konstruktor, dziedziczenie, enum
 
-## Zasady
 
-1. Każda praca domowa powinna być wykonana w tym repozytorium.
-1. Należy utworzyć nowy branch w konwencji `nrZadania_ImieNazwisko` (np: `1_MariuszSzymanski`) i na tym branchu przygotować rozwiązanie zadania.
-1. Rozwiązanie każdego z zadań powinno się znaleźć w tym samym folderze, w którym znajduje się plik z treścią zadania (np. rozwiązanie zadania nr 1 powinno znaleźć się w folderze Ex1).
-1. Przed rozpoczęciem pracy nad nowym zadaniem należy zawsze zrobić pull brancha `main`, a następnie utworzyć sobie nowy branch do wykonania zadania, wychodząc zawsze z brancha `main`.
-1. Pushowanie na branch `main` jest zablokowane.
-1. Stosujemy dobre praktyki commitowania kodu (https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/best-practices).
-1. Treść commitów piszemy po angielsku, nie korzystamy z wiadomości typu: "test", "test commit", "rozwiązanie", itp.
-1. Piszemy przejrzysty kod z odpowiednimi zagnieżdżeniami (pamiętaj: możesz korzystać ze skrótu IntelliJ do formatowania kodu).
-1. Jeśli uznasz, że Twoje zadanie jest gotowe do sprawdzenia, to daj mi znać na Slacku (`@Mariusz Szymański`).
-1. Termin oddania podany w każdym zadaniu jest ostateczny.
-1. Jako moment oddania liczy się godzina ostatniego wypushowanego commita (lub utworzenia pull requestu, ale o tym więcej przy kolejnych zadaniach).
-1. Zadania oddane po terminie są oceniane na maksymalnie połowę punktów.
-1. Pamiętaj, że punkty zdobyte za rozwiązanie zadań domowych mają istotny wpływ na wynik zaliczeniowy.
-1. Rozwiązania zadań będą trafiać na dedykowane branche o nazwie typu `1_rozwiazanie`, w ciągu tygodnia po upłynięciu terminu oddania.
+## Zadanie "Pizzeria" :pizza: 
 
-## Zadania
-Każde zadanie ma treść opisaną w pliku `README.md` w swoim katalogu.
-Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
+**Cel:**  
+Zaprojektuj aplikację dla małej Pizzerii (obsługa telefonicznych zamówień od klientów).
 
-### [Zadanie 1 - Podstawy programowania Java SE](./Ex1)
+**Założenia:**  
 
-### [Zadanie 2 - Podstawy programowania Java SE](./Ex2)
+_Menu_
+- pizza (mała, średnia, duża) :pizza:
+- hamburger :hamburger:
+- napoje (cola, sok, piwo) :beer:
 
-### [Zadanie 3 - Podstawy programowania Java SE](./Ex3)
+Typ pizzy: Pepperoni, Capricciosa, Diavola, itp.
 
-### [Zadanie 4 - OOP w Java](./Ex4)
+_Zamówienie_
+- klient (imię) / adres / telefon
+- rodzaj zamówienia (pizza (rozmiar/typ) / hamburger + napoje)
+  
+
+Wyobraź sobie teraz taką sytuację:  
+- Dzwoni klient: Zenek z ulicy Łąkowej 11E i zamawia dużą pizzę Pepperoni oraz 2 szt. soku.
+- Dzwoni kolejny klient: Krysia z ulicy Nadrzecznej 6/3 i zamawia małą pizzę Diavola, średnią Capriciosę oraz colę.
+- Dzwoni kolejny klient: Antoni z ulicy Polnej 13 i zamawia hamburgera oraz piwo.
+
+
+Wprowadź do swojej aplikacji powyższe zamówienia (zakodować w metodzie main, nie trzeba wprowadzać z konsoli).  
+Wypisz na konsolę listę wszystkich zamówień.  
+   
+
+**Wymagania:**
+- aplikacja powinna być napisana obiektowo (klasy np. Pizza, Drink, Order, Client itd.),
+- przynajmniej jeden rodzaj obiektu powinien być tworzony przy pomocy konstruktora,
+- implementacja powinna wykorzystywać mechanizm dziedziczenia
+- w przynajmniej jednej klasie zaimplementuj metody equals() i hashCode(),
+- w programie powinna się znaleźć przynajmniej jedna klasa Enum (np. PizzaSize),
+- klasy, metody i pola powinny mieć odpowiednie modyfikatory dostępu (public/private).  
+   
+
+**Dla chętnych** (bez wpływu na ocenę za zadanie):  
+- każde zamówienie zostaje zapisane do pliku w formacie JSON
+
+
+## Forma oddania zadania
+Utwórz branch o nazwie wg konwencji `4_imieNazwisko`, np. `4_MariuszSzymanski`  
+:exclamation: Pamiętaj, aby nowy branch utworzyć wychodząc z aktualnego brancha `main`.
+Wykonaj zadanie na podanym branchu.  
+Utwórz Pull Request ze swojego brancha na branch main.  
+Dopiero tak zgłoszone zadanie podlega ocenie.
+
+
+## Punktacja
+
+Do zdobycia jest :five: pkt.  
+Zadania oddane po terminie są oceniane na maksymalnie połowę punktów.
+
+#### Powodzenia!
+
+### :clock12: Termin oddania:
+## Piątek, 15.10.2021
